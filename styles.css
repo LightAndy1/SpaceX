@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  margin-top: 25px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 40%;
+  width: max-content;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+}
+
+.logo .fill-white {
+  fill: white;
+}
+
+.navbar a {
+  background: none;
+  border: none;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  line-height: 2;
+  position: relative;
+}
+
+.navbar a::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -0.1rem;
+  right: 0;
+  transition: width 0.2s ease;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.navbar .right {
+  position: absolute;
+  right: -450px;
+  top: 4px;
+  bottom: 0.425rem;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 2px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.hamburger-menu {
+  transform: translate(50px, 5px);
+  cursor: pointer;
+}
+
+.ax-3 {
+  background: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Axiom_3_vertical_011624_DSC_2598_desktop_2_36c19e7ece.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ax-3 > * {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
